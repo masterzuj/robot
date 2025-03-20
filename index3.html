@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot</title>
+  <style>
+       body { margin: 0; overflow: hidden; }
+    canvas { position: fixed; top: 100px; }
+    #controls {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 0px;
+    }
+    .verticalSlider { /* CSS-Klasse für die vertikalen Slider */
+      -webkit-appearance: none;
+      width: 100px;
+      height: 10px;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+		background-color: lightblue;
+    }
+	  
+  </style>
+	<script src="./p5.js"></script>
+</head>
+<body><br/>
+  <div id="controls">
+	  <label for="leftUpperArmSlider">Links:</label>
+    <input type="range" id="leftUpperArmSlider" min="-90" max="90" value="0" class="verticalSlider">
+
+    <input type="range" id="leftLowerArmSlider" min="0" max="160" value="0" class="verticalSlider">
+
+    <label for="rightUpperArmSlider">Rechts:</label>
+    <input type="range" id="rightUpperArmSlider" min="-90" max="90" value="0" class="verticalSlider">
+
+    <input type="range" id="rightLowerArmSlider" min="0" max="160" value="0" class="verticalSlider">
+ 
+    </div>
+  <script src="sketch3.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script type="importmap">
+  {
+    "imports": {
+      "three": "./three/build/three.module.js",
+      "three/addons/": "./three/examples/jsm/",
+	  "GLTFLoader": "./three/examples/jsm/loaders/GLTFLoader.js"
+    }
+  }
+</script>
+
+<script type="module" src="./three3.js"></script>
+	
+	
+	
+	
+</body>
+</html>
